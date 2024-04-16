@@ -1,34 +1,45 @@
-body, html {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            background: linear-gradient(to right, #f9d6ff, #bde4f4); 
-            text-align: center;
-            font-family: 'Arial', sans-serif;
-        }
-        h1 {font-family: Satisfy;
-            margin-top: 50px;
-            color: #f79256; 
-            transition: color 0.5s ease;
-        }
-        .images {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            padding: 20px;
-        }
-        .images img {
-            margin: 10px;
-            width: 300px;
-            border-radius: 15px; 
-            transition: transform 0.5s ease, box-shadow 0.5s ease;
-        }
-        .images img:hover {
-            transform: scale(1.05);
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-        }
-        @media (max-width: 600px) {
-            .images img {
-                width: 90%;
-            }
-        }
+* {box-sizing: border-box;}
+body {font-family: Satisfy, sans-serif; margin: 0;}
+
+.carousel {
+    position: relative;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slides img {
+    display: none;  
+    width: 100%;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.message {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin: 20px;
+}

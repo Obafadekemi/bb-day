@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+  <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Happy Birthday KJ!</h1>
+    <div class="images">
+        <img src="IMG_4835 2.JPG" alt="Birthday Image 1">
+        <img src="IMG_4835.JPG" alt="Birthday Image 2">
+        <img src="IMG_4837.JPG" alt="Birthday Image 3">
+        <img src="IMG_4838.JPG" alt="Birthday Image 4">
+        <img src="IMG_4839.JPG" alt="Birthday Image 5">
+    </div>
+  <script>
+        window.onload = function() {
+            var today = new Date();
+            var hour = today.getHours();
+            var greeting;
+
+            if (hour < 12) {
+                greeting = "Good Morning, King Jhyde! Happy Birthday!";
+            } else if (hour < 18) {
+                greeting = "Good Afternoon My Love! Happy Birthday!";
+            } else {
+                greeting = "Good Evening My Pilot! Happy Birthday!";
+            }
+
+            document.getElementById("greeting").textContent = greeting;
+        };
+    </script>
+</body>

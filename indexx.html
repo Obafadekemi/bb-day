@@ -9,29 +9,19 @@
 </head>
 <body>
     <h1>Happy Birthday KJ!</h1>
-    <div class="images">
-    <img src="IMG_4835 2.JPG" alt="Birthday Image 1">
-    <img src="IMG_4835.JPG" alt="Birthday Image 2">
-    <img src="IMG_4837.JPG" alt="Birthday Image 3">
-    <img src="IMG_4838.JPG" alt="Birthday Image 4">
-    <img src="IMG_4839.JPG" alt="Birthday Image 5">
+ <div class="carousel">
+    <div class="slides">
+    <img src="IMG_4835 2.JPG"  style="width:100%" alt="Birthday Image 1">
+    <img src="IMG_4835.JPG"  style="width:100%" alt="Birthday Image 2">
+    <img src="IMG_4837.JPG"  style="width:100%" alt="Birthday Image 3">
+    <img src="IMG_4838.JPG"  style="width:100%" alt="Birthday Image 4">
+    <img src="IMG_4839.JPG"  style="width:100%" alt="Birthday Image 5">
 </div>
-     <script>
-        window.onload = function() {
-            var today = new Date();
-            var hour = today.getHours();
-            var greeting;
+      <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+    <a class="next" onclick="changeSlide(1)">&#10095;</a>
+     </div>
+<div class="message"></div>
 
-            if (hour < 12) {
-                greeting = "Good Morning, [Friend's Name]! Happy Birthday!";
-            } else if (hour < 18) {
-                greeting = "Good Afternoon, [Friend's Name]! Happy Birthday!";
-            } else {
-                greeting = "Good Evening, [Friend's Name]! Happy Birthday!";
-            }
-
-            document.getElementById('greeting').textContent = greeting;
-        };
-    </script>
+<script src="script.js"></script>
 </body>
 </html>

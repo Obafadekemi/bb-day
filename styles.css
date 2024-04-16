@@ -11,24 +11,3 @@ body, html {
             color: #f79256; 
             transition: color 0.5s ease;
         }
-        .images {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            padding: 20px;
-        }
-        .images img {
-            margin: 10px;
-            width: 300px;
-            border-radius: 15px; 
-            transition: transform 0.5s ease, box-shadow 0.5s ease;
-        }
-        .images img:hover {
-            transform: scale(1.05);
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-        }
-        @media (max-width: 600px) {
-            .images img {
-                width: 90%;
-            }
-        }
